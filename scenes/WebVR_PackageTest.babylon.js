@@ -30,7 +30,7 @@ if (window.firelightAudio === 1 || window.firelightAudio === 2) {
 }
 
 /** Windows Launch Mode */
-window.preferredLaunchMode = 0;
+window.preferredLaunchMode = 1;
 if (typeof Windows !== "undefined" && typeof Windows.UI !== "undefined" && typeof Windows.UI.ViewManagement !== "undefined" &&typeof Windows.UI.ViewManagement.ApplicationView !== "undefined") {
 	Windows.UI.ViewManagement.ApplicationView.preferredLaunchWindowingMode = (window.preferredLaunchMode === 1) ? Windows.UI.ViewManagement.ApplicationViewWindowingMode.fullScreen : Windows.UI.ViewManagement.ApplicationViewWindowingMode.auto;
 }
